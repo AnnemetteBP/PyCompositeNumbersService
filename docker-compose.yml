@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  compositenumbersapi:
+    build: ./compositenumbersapi/
+    volumes:
+      - ./compositenumbersapi/:/code
+    ports:
+      - "2233:5000"
+    environment:
+      PYTHONPATH: /code  
